@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class</title>
+    <style>
+        table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                    padding: 40px;
+                }
+        th {
+            background-color:yellow; 
+            
+        }
+        
+       ul {
+           list-style: circle;
+       }
+       tr:nth-child(odd) {
+            background-color: pink;
+        }     
+        tr:nth-child(even) {
+            background-color: gray;
+        } 
+    </style>
+</head>
+<body>
+    <table style="font-size: 30px;border: solid 1px;">
+        <tr>
+            <th>a</th>
+            <th colspan="2">b</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            
+        </tr>
+        <tr >
+            <td rowspan="2">4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+
+    <ul>
+        <li>web</li>
+        <li>anroid</li>
+        <li>game</li>
+        
+    </ul>
+</body>
+</html>

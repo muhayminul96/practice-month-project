@@ -1,37 +1,40 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import re
 
 
 def cal(reguest):
     if reguest.method=="GET":
         return render(reguest, 'calculator/from.html')
     elif reguest.method=="POST":
-        num1 = int(reguest.POST['num1'])
-        num2 = int(reguest.POST['num2'])
-        opp = reguest.POST['opp']
+        passw = reguest.POST['pass']
+        context = {
+            'output' : 'none'
+        }
 
-        if opp=='+':
-            context = {
-                'output': num1+num2
+        if len(passw)>7:
+            if len(re.findall(r'[A-Z]', passw))>0:
+                if len(re.findall(r'[a-z]', passw))>0:
+                    if len(re.findall(r'[\!\"\#\$\%\&\'\(\)\*\+\,\-\.\/:\;\<\=\>\?\@\\[\\\]\^\_\\`\{\|\}\~]', passw)) > 0:
+                        if re.match(r'[\d]', passw):
+                            context['output'] = "First digit can't be number"
+                        else:
+                            context['output'] = 'PASS ALL CASE'
+                    else:
+                        context['output'] = "error password need at least one special characters "
 
-            }
-        elif opp == '-':
-            context = {
-                'output': num1 - num2
+                else:
+                    context['output'] = "error password need at least one Lowercase"
+            else:
+                context['output'] = "error password need at least one Uppercase"
 
-            }
-        if opp == '*':
-            context = {
-                'output': num1 * num2
+        else:
+            context['output'] = "password is sort , password have at least 8 character"
 
-            }
-        if opp == '/':
-            context = {
-                'output': num1 / num2
 
-            }
 
-        return render(reguest, 'calculator/output.html',context)
+        return render(reguest, 'calculator/output.html', context)
+
 
 def home(request):
     return HttpResponse("<h1>welcome</h1>")

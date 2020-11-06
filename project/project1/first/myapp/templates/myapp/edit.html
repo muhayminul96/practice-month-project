@@ -1,0 +1,34 @@
+{% extends 'myapp/base.html' %}
+{% block contect%}
+<form method="post" action="/update/{{ employee.id }}" class="form form-control">
+    {% csrf_token %}
+
+    <table>
+        <tr>
+
+
+            <td>
+                <input name="eid" required value="{{ employee.eid }}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input name="ename" required value="{{ employee.ename }}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input name="eemail" required value="{{ employee.eemail }}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input name="econtract" required value="{{ employee.econtract }}">
+            </td>
+        </tr>
+
+    </table>
+    <button type="submit" > update </button>
+
+</form>
+{% endblock %}

@@ -1,0 +1,29 @@
+
+{% extends 'myapp/base.html' %}
+{% block contect%}
+<table class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contract</th>
+
+    </tr>
+    {% for i in employee %}
+    <tr>
+        <td>{{ i.eid }}</td>
+        <td>{{ i.ename }}</td>
+        <td>{{ i.eemail }}</td>
+        <td>{{ i.econtract }}</td>
+        <td>
+            <a href="edit/{{ i.id }}">Edit</a>
+        </td>
+        <td>
+            <a href="delete/{{ i.id }}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock %}

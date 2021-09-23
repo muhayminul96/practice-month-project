@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>home</title>
 </head>
 <body>
-$END$
+<h1>String changer</h1>
+<form method="post" enctype="multipart/form-data">
+{% csrf_token %}
+    <input type="text" name="main" placeholder="Find Text"><br>
+    <input type="text" name="temp" placeholder="Replace Text"><br>
+    <p> Select a Text File</p>
+    <input type="file" name="txfile" ><br>
+    <input type="submit" value="replace">
+
+
+</form>
+<p>
+    {{ tex }}
+</p>
 </body>
 </html>

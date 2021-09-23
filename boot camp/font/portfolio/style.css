@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+.clr {
+    clear: both;
+}
+
+
+body {
+    background-color: blanchedalmond;
+    font-family: 'Roboto Slab', serif;
+}
+
+.continer { background-color: azure;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px ;
+    
+}
+
+section.profile-bio img{
+    height: 100px;
+    width: 100px;
+    border: white 3px solid;
+    border-radius: 50%;
+    float: left;
+    
+}
+
+.header-bio {
+    max-width: 30%;
+    
+    padding: 30px;
+`    
+}  
+.header-contract {
+    float: right;
+}

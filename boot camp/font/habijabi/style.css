@@ -1,0 +1,13 @@
+#welcome {
+    background-color: blue;
+    
+}
+#welcome_message {
+    text-align: left;
+    width: 300px;
+}
+
+#pt { float: left;
+    width: 100px;
+
+}

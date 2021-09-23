@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="72c09b4e-a962-457e-8dde-824e748e93f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../back/chan/string_changer/main/templates/main/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/chan/string_changer/main/templates/main/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back/first/facebook/file_sharing/templates/file_sharing/download.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/first/facebook/file_sharing/templates/file_sharing/download.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back/first/facebook/file_sharing/templates/file_sharing/file_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/first/facebook/file_sharing/templates/file_sharing/file_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back/first/facebook/file_sharing/templates/file_sharing/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/first/facebook/file_sharing/templates/file_sharing/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back/first/facebook/file_sharing/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/first/facebook/file_sharing/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back/first/facebook/messenger/templates/messenger/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/first/facebook/messenger/templates/messenger/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back/first/facebook/messenger/templates/messenger/contract.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/first/facebook/messenger/templates/messenger/contract.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back/first/facebook/messenger/templates/messenger/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/first/facebook/messenger/templates/messenger/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back/first/facebook/messenger/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/first/facebook/messenger/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back/first/facebook/prosseing/templates/prosseing/blocking.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/first/facebook/prosseing/templates/prosseing/blocking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back/first/facebook/prosseing/templates/prosseing/follow.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/first/facebook/prosseing/templates/prosseing/follow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back/first/facebook/prosseing/templates/prosseing/freind_request.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/first/facebook/prosseing/templates/prosseing/freind_request.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back/first/facebook/prosseing/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/first/facebook/prosseing/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back/guss a number/gussing_gameng/main_game/templates/main_game/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/guss a number/gussing_gameng/main_game/templates/main_game/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../back/word counter/counter/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../back/word counter/counter/main/templates/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project/project1/first/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../project/project1/first/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project/project1/first/first/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../project/project1/first/first/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../project/project1/first/first/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../project/project1/first/first/urls.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="JupyterTrust" id="c4c450cc-0b92-4460-935f-696c5e21e94a" />
+  <component name="ProjectId" id="1s70GpjfyMio7jEjzobFBrzUTgB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72c09b4e-a962-457e-8dde-824e748e93f9" name="Default Changelist" comment="" />
+      <created>1620208244384</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620208244384</updated>
+      <workItem from="1620208260119" duration="78000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>class task</title>
+  <style>
+    .wrapper {
+        position: relative;
+      }
+      .wrapper:after {
+        padding-top: 56.25%;
+        display: block;
+        content: ' ';
+      }
+      .flex-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 5px;
+        display: flex;
+      }
+      .flex-container > div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .flex-container > div > div {
+        margin: 5px;
+        display: flex;
+      }
+      
+      .flex-col-1 {
+        width: 50%;
+      }
+        .flex-col-1 .flex-row-1 {
+          height: 100%;
+          background: gray  ;
+          background-size: cover;
+        }
+        .flex-col-1 .flex-row-2 {
+          height: 30%;
+          background: red ;
+          background-size: cover;
+        }
+      
+      .flex-col-2 {
+        width: 42.5%;
+      }
+        .flex-col-2 .flex-row-1 {
+          height: 30%;
+          background:blueviolet  ;
+          background-size: cover;
+        }
+        .flex-col-2 .flex-row-2 {
+          height: 35%;
+        }
+      
+      .flex-col-3-inner {
+        flex: 1;
+        display: flex;
+      }
+        .flex-col-3-inner .flex-col-1-inner {
+          width: 40%;
+          margin-right: 5px;
+          background: green ;
+          background-size: cover;
+        }
+        .flex-col-3-inner .flex-col-2-inner {
+          width: 60%;
+          margin-left: 5px;
+          background: tomato ;
+          background-size: cover;
+        }
+      
+  </style>
+</head>
+<div class="wrapper">
+  <div class="flex-container">
+    <div class="flex-col-1">
+      <div class="flex-row-1">
+      </div>
+
+    </div>
+
+    <div class="flex-col-2">
+      <div class="flex-row-1">
+      </div>
+      <div class="flex-row-2">
+        <div class="flex-col-3-inner">
+          <div class="flex-col-1-inner">
+          </div>
+          <div class="flex-col-2-inner">
+          </div>
+        </div>
+      </div>
+      <div class="flex-row-1">
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

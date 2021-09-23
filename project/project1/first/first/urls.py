@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from myapp import views as myapp_views
+from portfolio import views as portfolio_views
 
 
 urlpatterns = [
@@ -28,5 +29,6 @@ urlpatterns = [
     path('delete/<int:id>', myapp_views.delete),
     path('update/<int:id>', myapp_views.update),
     path('search', myapp_views.sharch),
-
+    path('index', portfolio_views.index),
+    path('index1', portfolio_views.index1),
 ]

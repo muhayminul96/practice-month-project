@@ -1,9 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+context = {
+    'home': 0,
+    'about': 0,
+    'contract': 0,
+}
+
 def about(request):
-    return render(request,'messenger/about.html')
+    context['about'] += 1
+    return render(request,'messenger/about.html',context)
 def home(request):
-    return render(request, 'messenger/home.html')
+    context['home'] += 1
+    return render(request, 'messenger/home.html',context)
 def contact(request):
-    return render(request, 'messenger/contract.html')
+    context['contract'] += 1
+    return render(request, 'messenger/contract.html',context)

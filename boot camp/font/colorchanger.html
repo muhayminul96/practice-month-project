@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id='body' style="background-color:white ; text-align:center;"  >
+    
+<button style="background-color:red; padding:40px " type="button" onclick="redcolor()"> red</button>
+<button style="background-color:blue; padding:40px "  type="button" onclick="bluecolor()">blue</button><br>
+<button style="background-color:yellow; padding:30px "  type="button" onclick="yellowcolor()"> yellow</button>
+<button style="background-color:green; padding:30px "  type="button" onclick="greencolor()"> green</button>
+<script>
+    function redcolor(){
+        var bg = document.getElementById('body')
+        bg.style.backgroundColor ="red"
+    }
+
+    function bluecolor(){
+        var bg = document.getElementById('body')
+        bg.style.backgroundColor ="blue"
+    }
+
+    function yellowcolor(){
+        var bg = document.getElementById('body')
+        bg.style.backgroundColor ="yellow"
+    }
+
+    function greencolor(){
+        var bg = document.getElementById('body')
+        bg.style.backgroundColor ="green"
+    }
+</script>
+
+</body>
+</html>

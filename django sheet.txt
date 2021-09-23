@@ -1,0 +1,15 @@
+## for set up static
+STATICFILS_DIRS = (os.path.join(BASE_DIRS,"static"),)
+
+
+## postgresql set up
+
+'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'firstproject',
+            'USER': 'postgres',
+            'PASSWORD': '123456',
+            'HOST': 'localhost',
+            'PORT': '5432'
+
+        }

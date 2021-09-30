@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>$Title$</title>
+</head>
+<body style="text-align: justify-all">
+<h1>
+    {% for message in masseges %}
+
+        {{ message }}
+    {% endfor %}
+<form action="login" method="post" >
+    {% csrf_token %}
+    <input type="text" PLACEHOLDER="Username", name="username"> <br>
+    <input type="password" placeholder="password" name="password"><br>
+    <input type="submit" value="submit"><br>
+
+</form>
+    </h1>
+</body>
+</html>

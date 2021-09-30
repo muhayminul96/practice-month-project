@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+
+<h1> please input all</h1>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" placeholder="name" name="name"><br>
+    <input type="email" placeholder="email" name="email"><br>
+    <input type="text" placeholder="phone Number" name="phone"><br>
+    <input type="text" placeholder="address" name="address"><br>
+    <input type="radio" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" name="gender" value="female">
+    <label for="female">Female</label><br>
+
+
+
+    <label>department</label>
+    <select name="deparment">
+        <option value="CSE">CSE</option>
+        <option value="EEE">EEE</option>
+        <option value="ETE">ETE</option>
+        <option value="SE">SE</option>
+        <option value="TE">TE</option>
+    </select>
+    <br>
+    <input type="submit" value="submit"><br>
+
+</form>
+</body>
+</html>

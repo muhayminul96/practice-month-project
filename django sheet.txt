@@ -13,3 +13,7 @@ STATICFILS_DIRS = (os.path.join(BASE_DIRS,"static"),)
             'PORT': '5432'
 
         }
+
+## foreign key filter
+
+texts = Text.objects.filter(room__room_name=room)

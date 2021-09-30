@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% if city %}
+        <title>{{ city }}</title>
+    {% else %}
+        <title>search</title>
+    {% endif %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <form method="post" action="weather" >
+        {% csrf_token %}
+        <input type="search" name="city">
+        <input type="submit" value="Search" >
+    </form>
+
+    {% if data %}
+  <h2>{{ city }}</h2>
+
+  <table class="table table-bordered">
+
+    <tbody>
+      <tr>
+        <td>country code</td>
+        <td>{{ data.sys.country }}</td>
+
+      </tr>
+
+      <tr>
+        <td>coordinate</td>
+        <td>long {{ data.coord.lon }} lat {{ data.coord.lat }}</td>
+      </tr>
+      <tr>
+        <td>temperature</td>
+        <td>{{ data.main.temp }}k</td>
+      </tr>
+      <tr>
+        <td>pressure</td>
+        <td>{{ data.main.pressure }}</td>
+      </tr>
+      <tr>
+        <td>humidity</td>
+        <td>{{ data.main.humidity }}</td>
+      </tr>
+
+
+
+    </tbody>
+  </table>
+    {% endif %}
+</div>
+
+</body>
+</html>

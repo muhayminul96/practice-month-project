@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chating room</title>
+</head>
+<body>
+{% if texts %}
+{% for text in texts %}
+<h3>{{ text.username }}</h3>
+<h6>{{ text.date }}</h6>
+<h5>{{ text.text }}</h5>
+{% endfor %}
+{% endif %}
+
+<form method="post" >
+    {% csrf_token %}
+    <textarea name="text"> type.....
+    </textarea>
+    <input type="submit" value="send">
+</form>
+</body>
+</html>

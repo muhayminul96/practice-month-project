@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+
+<body style="font-size: large">
+{% if user.is_authenticated %}
+<form method="post" action="" >
+    {% csrf_token %}
+<input type="text" placeholder="Room Name" name="room">
+<br>
+<input type="text" placeholder="Your Name" name="name" >
+<br>
+<input type="submit" value="Submit">
+<a href="logout">Logout</a>
+</form>
+{% else %}
+    <a href="register">Sign in</a>
+{% endif %}
+</body>
+</html>

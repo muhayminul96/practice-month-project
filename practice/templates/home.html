@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>helllo</title>
+</head>
+<body>
+{% if user.is_authenticated %}
+<h1>hello {{ user.username }}</h1>
+    <a href="logout"> Logout</a>
+{% else %}
+<h1> oi login kor age</h1>
+{% endif %}
+
+
+{% for person in persons %}
+    <h1>{{ person.name }}</h1>
+    <p>{{ person.info }}</p>
+
+{% endfor %}
+
+{% for name in names %}
+
+
+    <a href="{% url 'ditails' name %}">{{ name }}</a>
+{% endfor %}
+</body>
+</html>
